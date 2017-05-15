@@ -3,7 +3,7 @@ import sbtassembly.AssemblyPlugin.autoImport.MergeStrategy
 
 import sbtassembly._
 
-object $name$Build {
+object $name_camel$Build {
 
   val scalaV= "2.12.1"
 

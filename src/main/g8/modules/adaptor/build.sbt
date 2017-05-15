@@ -1,10 +1,10 @@
 name := """adaptor"""
 
-resolvers ++= $name$Build.resolvers
+resolvers ++= $name_camel$Build.resolvers
 
-scalaVersion := $name$Build.scalaV
+scalaVersion := $name_camel$Build.scalaV
 
-libraryDependencies ++= $name$Build.dependency
+libraryDependencies ++= $name_camel$Build.dependency
 
 updateOptions := updateOptions.value.withCachedResolution(true)
 

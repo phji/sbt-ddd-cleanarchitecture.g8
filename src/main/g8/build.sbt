@@ -1,7 +1,7 @@
 // give the user a nice default project!
 import sbtassembly.MergeStrategy
 
-name := """$name$"""
+name := """$name;format="norm"$"""
 
 version := "1.0"
 
@@ -20,13 +20,13 @@ lazy val usecase = (project in file("modules/usecase"))
 
 lazy val other = project in file("modules/other")
 
-scalaVersion := $name$Build.scalaV
+scalaVersion := $name_camel$Build.scalaV
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-Xlint")
 
-libraryDependencies ++= $name$Build.dependency
+libraryDependencies ++= $name_camel$Build.dependency
 
-resolvers ++= $name$Build.resolvers
+resolvers ++= $name_camel$Build.resolvers
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-language:reflectiveCalls", "-language:implicitConversions")
 
